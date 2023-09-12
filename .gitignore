@@ -9,3 +9,26 @@
 
 # Simulink Code Generation
 slprj/
+
+# files ignored
+*.code-workspace
+*.bak
+*.bak.*
+*.ckpt
+*.old
+*.pyc
+*.png
+.DS_Store
+.ipynb_checkpoints
+checkpoint
+logs/*
+tf_logs/*
+*.npy
+.vscode/
+.*.m
+gcp-vscode-ssh/
+*.json
+.Rhistory
+
+# project related
+# szimp_dataset.json
