@@ -51,7 +51,8 @@ void sample(double mu, double kappa, double *angles, mwSize numSamples)
 	double randomSample2;
 	
 	/* Initialize random number generator */
-	srand( time(NULL) + clock() + random() );
+	// srand( time(NULL) + clock() + random() ); // good for POSIX stdlib.h, but not valid on windows
+	srand( time(NULL) + clock() + rand() );
 	
 	/* Compute sampling parameter */
 	if ( kappa > 1.3 ) {
